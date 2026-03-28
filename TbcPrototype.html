@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tbc - Prototype</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="Tbc">
+  <main class="splash">
+    <section class="logo">
+      <h2 class="secondtitle">Singular Synaptic Bridge</h2><br><br>
+    </section>
+
+    <section class="tbc-product-intro" aria-label="SSB product introduction">
+      <p class="tbc-product-intro-text">Singular Synaptic Bridge, or SSB, is a speculative neural interface device that captures short-term memory traces and converts them into brief text records. Designed as a wearable memory tool, it works between the brain and a personal digital archive, allowing moments, thoughts, and impressions to be saved before they disappear.</p>
+    </section>
+
+    <section class="tbc-carousel" aria-label="SSB prototype carousel">
+      <div class="tbc-carousel-main">
+        <img id="tbc-main-image" class="tbc-carousel-main-image" src="pics/SSB4.jpg" alt="SSB4 sketch prototype" />
+        <button class="tbc-arrow tbc-arrow-left" type="button" aria-label="Previous image">&#9664;</button>
+        <button class="tbc-arrow tbc-arrow-right" type="button" aria-label="Next image">&#9654;</button>
+      </div>
+
+      <p id="tbc-main-caption" class="tbc-carousel-caption">Sketch</p>
+
+      <ul class="tbc-thumbnails" aria-label="SSB thumbnail list">
+        <li class="tbc-thumb current-thumb">
+          <button type="button" data-src="pics/SSB4.jpg" data-alt="SSB4 sketch prototype" data-caption="Sketch" aria-label="Show sketch image">
+            <img src="pics/SSB4.jpg" alt="SSB4 sketch thumbnail" />
+          </button>
+        </li>
+        <li class="tbc-thumb">
+          <button type="button" data-src="pics/SSB1.png" data-alt="SSB1 wearable prototype" data-caption="Wearable Mockup" aria-label="Show wearable mockup image">
+            <img src="pics/SSB1.png" alt="SSB1 wearable thumbnail" />
+          </button>
+        </li>
+        <li class="tbc-thumb">
+          <button type="button" data-src="pics/SSB3.png" data-alt="SSB3 key visual prototype" data-caption="Prototype Render" aria-label="Show SSB3 featured image">
+            <img src="pics/SSB3.png" alt="SSB3 featured thumbnail" />
+          </button>
+        </li>
+        <li class="tbc-thumb">
+          <button type="button" data-src="pics/SSB2.png" data-alt="SSB2 interface prototype" data-caption="Interface Mockup" aria-label="Show interface mockup image">
+            <img src="pics/SSB2.png" alt="SSB2 interface thumbnail" />
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <p class="video-link-row"><a class="video-link-frame" href="https://docs.google.com/document/d/1zJPE4VaoV6iQePpsv55BYMT6meB-_w-kLLFTKSePkgA/edit?usp=sharing" target="_blank">Click to view the design statement</a></p><br><br><br><br>
+    <p class="page-back"><a href="Tbc.html">Back to Hub</a></p>
+  </main>
+  <script src="../Tbc.js"></script>
+</body>
+</html>
