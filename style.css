@@ -416,6 +416,10 @@ body::before {
    响应式
 ================================ */
 @media (max-width: 760px) {
+  .splash {
+    padding: 10vh 12px 8vh;
+  }
+
   .logo-title .word.big {
     font-size: 44px;
   }
@@ -429,8 +433,12 @@ body::before {
   }
 
   .nav-card {
-    width: fit-content;
-    max-width: 95vw;
+    width: min(680px, 92vw);
+    max-width: 92vw;
+  }
+
+  .nav-card__inner {
+    padding: 18px 14px 16px;
   }
 
   .nav-card__title {
@@ -438,9 +446,52 @@ body::before {
     font-size: 26px;
   }
 
+  .nav-card:last-child .nav-card__title {
+    white-space: normal;
+  }
+
   .item {
     height: 74px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-copy {
+    font-size: 11px;
+  }
+
+  .logo {
+    padding: 20px 8px 8px;
+  }
+
+  .logo-title .word.big {
+    font-size: 32px;
+  }
+
+  .logo-title .word.small {
+    font-size: 14px;
+  }
+
+  .underline {
+    height: 10px;
+    margin-top: 14px;
+  }
+
+  .nav-grid {
+    gap: 16px;
+    margin-top: 28px;
+    width: 100%;
+  }
+
+  .nav-card {
+    width: 94vw;
+    max-width: 94vw;
+  }
+
+  .nav-card__title {
+    font-size: 19px;
+    line-height: 1.3;
   }
 }
 
