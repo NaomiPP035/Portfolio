@@ -902,6 +902,23 @@ body[class] .splash > * {
   height: auto;
 }
 
+/* Zine 页面：使用独立样式让两张图尽可能放大，不影响其他 Tbc 子页 */
+.Tbc .tbc-zine-page {
+  width: min(1800px, 99vw);
+  padding: 8vh 8px 8vh;
+}
+
+.Tbc .tbc-zine-header {
+  width: min(1200px, 94vw);
+}
+
+.Tbc .tbc-zine-image {
+  width: min(1800px, 98vw);
+  max-width: 98vw;
+  height: auto;
+  margin: 12px auto;
+}
+
 .Tbc .tbc-carousel {
   width: min(720px, 88vw);
   margin: 0 auto 7vh;
@@ -1111,6 +1128,18 @@ body[class] .splash > * {
     font-size: clamp(18px, 5.8vw, 26px);
   }
 
+  /* Zine 页面：手机端继续保持接近满屏宽度 */
+  .Tbc .tbc-zine-page {
+    width: 99vw;
+    padding: 6vh 4px 8vh;
+  }
+
+  .Tbc .tbc-zine-image {
+    width: 99vw;
+    max-width: 99vw;
+    margin: 8px auto;
+  }
+
   .nav-card,
   .item,
   .video-link-frame,
@@ -1161,5 +1190,14 @@ body[class] .splash > * {
 
   body[class] .secondtitle {
     font-size: clamp(16px, 6.2vw, 21px);
+  }
+
+  .Tbc .tbc-zine-page {
+    padding: 5vh 2px 7vh;
+  }
+
+  .Tbc .tbc-zine-image {
+    width: 100vw;
+    max-width: 100vw;
   }
 }
