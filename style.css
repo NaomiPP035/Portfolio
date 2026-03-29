@@ -1036,17 +1036,32 @@ body > * {
     opacity: 0.72;
   }
 
-  .splash,
+  .splash {
+    width: min(96vw, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10vh 12px 8vh;
+  }
+
   .logo,
   .list,
   .nav-grid,
+  .title,
+  .page-back,
+  .video-link-row,
+  .Tbc .tbc-product-intro,
   .tbc-hub,
   .tbc-carousel,
   .tbc-keyrefs {
-    width: min(100%, calc(100vw - 24px)) !important;
-    max-width: calc(100vw - 24px) !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: min(92vw, 980px);
+    max-width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-card {
+    width: 92vw;
+    max-width: 92vw;
   }
 
   .nav-card__title,
@@ -1065,60 +1080,51 @@ body > * {
   }
 
   .secondtitle {
-    font-size: clamp(19px, 6vw, 28px) !important;
+    font-size: clamp(18px, 5.8vw, 26px);
   }
 
   p {
-    font-size: clamp(12px, 3.2vw, 14px) !important;
+    font-size: clamp(12px, 3.1vw, 14px);
+    line-height: 1.65;
   }
 
+  body[class] main,
+  body[class] section,
   body[class] p,
   body[class] div,
   body[class] li,
-  body[class] .tbc-subnav,
-  body[class] .video-link-frame {
-    font-size: clamp(12px, 3.1vw, 14px) !important;
-    line-height: 1.65;
+  body[class] .tbc-subnav {
     text-align: center;
-    text-align-last: center;
   }
 
   body[class] .secondtitle {
-    font-size: clamp(18px, 5.8vw, 26px) !important;
-  }
-
-  .nav-card,
-  .item,
-  .Tbc .tbc-hub-card,
-  .page-back a,
-  .video-link-frame {
-    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.44) !important;
+    font-size: clamp(18px, 5.8vw, 26px);
   }
 }
 
 @media (max-width: 480px) {
   .logo-title .word.big {
-    font-size: 30px !important;
+    font-size: 30px;
   }
 
   .logo-title .word.small {
-    font-size: 13px !important;
+    font-size: 13px;
   }
 
   .nav-card__title {
-    font-size: 18px !important;
+    font-size: 18px;
   }
 
   .tbc-hub-card {
-    font-size: 13px !important;
+    font-size: 13px;
   }
 
   .secondtitle {
-    font-size: clamp(17px, 6.8vw, 22px) !important;
+    font-size: clamp(16px, 6.2vw, 21px);
   }
 
   p {
-    font-size: 12px !important;
+    font-size: 12px;
   }
 
   body[class] p,
@@ -1128,11 +1134,11 @@ body > * {
   body[class] .video-link-frame,
   body[class] .page-back a,
   body[class] .tbc-hub-card {
-    font-size: 11px !important;
+    font-size: 11px;
     line-height: 1.6;
   }
 
   body[class] .secondtitle {
-    font-size: clamp(16px, 6.2vw, 21px) !important;
+    font-size: clamp(16px, 6.2vw, 21px);
   }
 }
