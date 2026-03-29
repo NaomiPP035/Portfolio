@@ -913,8 +913,8 @@ body[class] .splash > * {
 }
 
 .Tbc .tbc-zine-image {
-  width: min(1800px, 98vw);
-  max-width: 98vw;
+  width: 44%;
+  max-width: 44%;
   height: auto;
   margin: 12px auto;
 }
@@ -1128,16 +1128,16 @@ body[class] .splash > * {
     font-size: clamp(18px, 5.8vw, 26px);
   }
 
-  /* Zine 页面：手机端继续保持接近满屏宽度 */
+  /* Zine 页面：手机端图片放大占满屏幅 */
   .Tbc .tbc-zine-page {
-    width: 99vw;
-    padding: 6vh 4px 8vh;
+    width: 100vw;
+    padding: 6vh 2px 8vh;
   }
 
   .Tbc .tbc-zine-image {
-    width: 99vw;
-    max-width: 99vw;
-    margin: 8px auto;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 6px auto;
   }
 
   .nav-card,
@@ -1193,11 +1193,13 @@ body[class] .splash > * {
   }
 
   .Tbc .tbc-zine-page {
-    padding: 5vh 2px 7vh;
+    width: 100vw;
+    padding: 5vh 0 7vh;
   }
 
   .Tbc .tbc-zine-image {
     width: 100vw;
     max-width: 100vw;
+    margin: 4px auto;
   }
 }
